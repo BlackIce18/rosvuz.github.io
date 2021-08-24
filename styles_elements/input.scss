@@ -585,8 +585,12 @@ svg {
             width: 20px;
             height: 30px;
             fill: $gray;
-            margin: 10px 15px 10px 0;
+            margin: 15px 15px 15px 0;
             cursor: pointer;
+
+            @media (max-width: $lg) {
+                margin: 10px 15px 10px 0;
+            }
 
             &-active,&:hover {
                 fill: $blue;
