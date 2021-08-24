@@ -65,6 +65,7 @@
     margin-right: 10px;
   }
   .discussion__edit .messenger__header_block_userInfo {
+    margin-right: 10px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -82,10 +83,7 @@
     height: 30px;
   }
   .discussion__edit .messenger__header_block_additional .favouriteIcon {
-    right: 20px;
-  }
-  .discussion__edit .messenger__header_block_additional .additionalThreePoints {
-    font-size: 15px;
+    right: 25px;
   }
   .discussion__edit .discussion__actions {
     display: none;

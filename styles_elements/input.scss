@@ -436,12 +436,6 @@ svg {
         }
     }
 
-    .button__add {
-        svg.button__add_innerSVG {
-            position: static;
-            transform: none;
-        }
-    }
 
     &_yellow {
         border: 1px solid $yellow;
@@ -526,6 +520,10 @@ svg {
         position: relative;
         float: left;
         margin-right: 20px;
+
+        @media (max-width:$lg) {
+            width: calc(100% - 20px - 85px); //20px margin-right этого блока + 100px ширина paperclip+button__send
+        }
     }
 
     &__textArea {
@@ -598,6 +596,7 @@ svg {
         .button__send {
             padding: 0;
             margin: 0;
+            
         }
     }
 

@@ -148,17 +148,19 @@
 }
 
 @media (max-width: $sm) {
-    .messenger__header {
-        padding: 0;
-        padding-bottom: 20px;
-    }
+    .discussion {
+        .messenger__header {
+            padding: 0;
+            padding-bottom: 20px;
+        }
 
-    .button__svg.button {
-        margin-right: 15px;
-    }
+        .button__svg.button {
+            margin-right: 15px;
+        }
 
-    .discussion .messenger__header .messenger__header-title {
-        margin: 0;
-        line-height: 40px;
+        .messenger__header .messenger__header-title {
+            margin: 0;
+            line-height: 40px;
+        }
     }
 }

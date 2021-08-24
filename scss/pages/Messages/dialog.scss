@@ -99,10 +99,12 @@
         &_wrapper {
             position: relative;
             cursor: pointer;
+            height: 25px;
         }
 
         .pinned_message_text {
             font-size: 12px;
+            line-height: 12px;
             font-weight: 300;
             color: $blue;
             margin-bottom: 10px;
@@ -428,6 +430,7 @@
     }
 
     .messenger .messenger__dialog_pinned_message {
+        min-height: 30px;
         padding: 10px 0;
 
         .messenger__list-item {
@@ -447,7 +450,7 @@
                     font-size: 12px;
                     line-height: 20px;
                     font-weight: 300;
-                    margin-top: 10px;
+                    margin-top: 5px;
                 }
             }
             .messenger__messageDepartureTime {
@@ -463,9 +466,23 @@
             }
 
             .messageDepartureTime {
+                font-size: 10px;
+                line-height: 10px;
+                margin-top: 3px;
                 margin-bottom: 5px;
             }
         }
+    }
+
+    .dialog {
+        .messenger__header_block {
+            padding-bottom: 15px;
+        }
+    }
+
+    .messenger .messenger__dialog_pinned_message_wrapper {
+        display: flex;
+        height: 10px;
     }
 
     .messenger .messenger__dialog_pinned_message.pin_overflow .messenger__list-item .messenger__messageBlock {

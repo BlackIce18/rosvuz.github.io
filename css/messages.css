@@ -110,9 +110,19 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   margin: 0;
+  font-size: 15px;
 }
 
-.messenger__list-item .messenger__messageBlock .userMessage.blue {
+.messenger__list-item .messenger__messageBlock .userMessage a {
+  text-decoration: none;
+  color: #444444;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.messenger__list-item .messenger__messageBlock .userMessage.blue a {
   font-weight: 500;
   color: #3f59b7;
 }
@@ -130,6 +140,10 @@
           transform: translateY(-50%);
   cursor: pointer;
   margin-top: -5px;
+}
+
+.messenger__list-item .additionalThreePoints.hide {
+  display: none;
 }
 
 .messenger__list-item .favouriteIcon {

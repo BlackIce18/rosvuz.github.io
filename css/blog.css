@@ -71,14 +71,12 @@
 
 .blog__image {
   max-height: 320px;
+  min-height: 320px;
   background: #f5f7fb;
   border-radius: 10px;
   overflow: hidden;
   height: 100%;
-}
-
-.blog__image .button {
-  border-radius: 10px;
+  position: relative;
 }
 
 .blog__image img {
@@ -87,6 +85,7 @@
 
 @media (max-width: 767px) {
   .blog__image {
+    min-height: auto;
     height: 120px;
   }
 }

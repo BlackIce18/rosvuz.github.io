@@ -1,1 +1,9 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"selector.css"}
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../styles_elements/selector.scss"
+    ],
+    "names": [],
+    "file": "selector.css"
+}
