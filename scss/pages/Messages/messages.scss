@@ -95,7 +95,16 @@
                 white-space: nowrap;
                 text-overflow: ellipsis;
 
+                .messenger__messageSendBy {
+                    @include threeDotsInText;
+                }
+
                 .messenger__username {
+                    $width: 730px;
+                    $parentWidth: 910px;
+
+                    max-width: ($width / $parentWidth) * 100%;
+
                     font-size: 15px;
                     line-height: 15px;
                     font-weight: 500;
@@ -105,6 +114,8 @@
                     margin-bottom: 0;
                     display: inline-block;
                     cursor: pointer;
+
+                    @include threeDotsInText;
                 }
 
 
@@ -226,6 +237,7 @@
                     font-size: 12px;
                     line-height: 12px;
                     margin-bottom: 5px;
+                    max-width: 100%;
                 }
 
                 .userMessage {

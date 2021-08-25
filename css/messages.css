@@ -96,6 +96,7 @@
 
 .messenger__list-item .messenger__messageBlock .messenger__username {
   font-size: 15px;
+  line-height: 15px;
   font-weight: 500;
   text-align: left;
   color: #444444;
@@ -111,6 +112,7 @@
   text-overflow: ellipsis;
   margin: 0;
   font-size: 15px;
+  line-height: 25px;
 }
 
 .messenger__list-item .messenger__messageBlock .userMessage a {
@@ -161,6 +163,7 @@
 
 .messenger .messageDepartureTime {
   font-size: 12px;
+  line-height: 12px;
   font-weight: 300;
   color: #c5c5c5;
 }
@@ -169,95 +172,6 @@
   margin-right: 35px;
 }
 
-/*
-@media (min-width: 1600px) {
-    
-}
-
-@media (min-width: 1366px) and (max-width: 1599px) {
-    
-}
-
-@media (min-width: 1280px) and (max-width: 1365px) {
-    
-}
-
-@media (min-width: 993px) and (max-width: 1279px) {
-    .messenger {
-        &__header {
-
-            &-actions {
-                .button__createDialog {
-                    display: inline-block;
-                }
-
-                .button__createDialog-plus {
-                    display: none;
-                }
-
-                .favouriteIcon {
-                    display: inline;
-                }
-            }
-
-            &-searchIcon {
-                margin-right: 35px;
-            }
-        }
-    }
-}
-
-@media (min-width: 768px) and (max-width: 992px) {
-    .messenger {
-        &__header {
-            &-actions {
-                .button__createDialog {
-                    display: none;
-                }
-
-                .button__createDialog-plus {
-                    display: inline-block;
-                }
-
-                .favouriteIcon {
-                    display: none;
-                }
-            }
-
-            &-searchIcon {
-                margin-right: 15px;
-            }
-        }
-    }
-}
-
-@media (min-width: 480px) and (max-width: 767px) {
-    .messenger {
-        &__header {
-            &-actions {
-                .button__createDialog {
-                    display: none;
-                }
-
-                .button__createDialog-plus {
-                    display: inline-block;
-                }
-
-                .favouriteIcon {
-                    display: none;
-                }
-            }
-
-            &-searchIcon {
-                margin-right: 15px;
-            }
-        }
-    }
-}
-
-@media (min-width: 320px) and (max-width: 479px) {
-
-}*/
 @media (max-width: 991px) {
   .messenger__header {
     padding: 15px 0 25px 0;
@@ -287,9 +201,11 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .messenger__list-item .messenger__messageBlock .messenger__messageDepartureTime {
+  .messenger__list-item .messenger__messageBlock .messageDepartureTime {
     font-size: 10px;
     line-height: 10px;
+    margin-top: 3px;
+    margin-bottom: 5px;
   }
   .messenger__list-item .messenger__messageBlock .messenger__username {
     font-size: 12px;
@@ -316,6 +232,12 @@
   }
   .block-center {
     padding: 20px;
+  }
+}
+
+@media (max-width: 539px) {
+  .messenger .messenger__list-item {
+    margin-bottom: 5px;
   }
 }
 /*# sourceMappingURL=messages.css.map */

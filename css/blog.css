@@ -107,7 +107,7 @@
 }
 
 .blog__item__all .item.blue .top .content, .blog__item__all .item:hover .top .content {
-  z-index: 10;
+  z-index: 2;
 }
 
 .blog__item__all .item.blue .top_message__icon-label, .blog__item__all .item:hover .top_message__icon-label {

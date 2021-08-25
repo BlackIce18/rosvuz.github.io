@@ -485,7 +485,6 @@
                                 </svg>
                         </div>
                         <div class="messenger__messageBlock">
-
                             <div class="user user-sm-show">
                                 <div class="user__short ">
                                     <div class="user__short-photo status__label">
@@ -502,7 +501,7 @@
                                 </div>
                             </div>
 
-                            <div class="d-flex flex-column flex-lg-row align-items-lg-center">
+                            <div class="d-flex flex-column flex-lg-row align-items-lg-center messenger__messageSendBy">
                                 <p class="messenger__username order-2 order-lg-1">Фамилия Имя</p>
                                 <span class="messageDepartureTime order-1 order-lg-2">12 июля 2021 в 12:15</span>
                             </div>
@@ -793,7 +792,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="d-flex flex-column">
+                                                <div class="d-flex flex-column flex-lg-row align-items-lg-center messenger__messageSendBy">
                                                     <p class="messenger__username order-2 order-lg-1">Фамилия Имя</p>
                                                     <span class="messageDepartureTime order-1 order-lg-2">12 июля 2021 в 12:01</span>
                                                 </div>
@@ -860,7 +859,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="d-flex flex-column">
+                                                <div class="d-flex flex-column flex-lg-row align-items-lg-center messenger__messageSendBy">
                                                     <p class="messenger__username order-2 order-lg-1">Фамилия Имя</p>
                                                     <span class="messageDepartureTime order-1 order-lg-2">12 июля 2021 в 12:01</span>
                                                 </div>
@@ -927,25 +926,27 @@
                                         </p>
 
                                         <div class="messenger__list-item">
-                                            <div class="user online">
-                                                <div class="user__short ">
-                                                    <div class="user__short-photo status__label">
-                                                        <img class="clip-svg image" src="./resource/images/studentImage.jpg" alt="">
-                                                        <svg width="0" height="0" class="form">
-                                                            <defs>
-                                                                <clipPath id="myClip" clipPathUnits="objectBoundingBox">
-                                                                    <path d="M0.894,0.894 C0.842,0.955,0.685,1,0.5,1 C0.315,1,0.158,0.955,0.106,0.894 C0.045,0.842,0,0.685,0,0.5 C0,0.315,0.045,0.158,0.106,0.106 C0.158,0.045,0.315,0,0.5,0 C0.685,0,0.842,0.045,0.894,0.106 C0.955,0.158,1,0.315,1,0.5 C1,0.685,0.955,0.842,0.894,0.894">
-                                                                    </path>
-                                                                </clipPath>
-                                                            </defs>
-                                                        </svg>
+                                            <div class="messenger__messageBlock">
+
+                                                <div class="user online">
+                                                    <div class="user__short ">
+                                                        <div class="user__short-photo status__label">
+                                                            <img class="clip-svg image" src="./resource/images/studentImage.jpg" alt="">
+                                                            <svg width="0" height="0" class="form">
+                                                                <defs>
+                                                                    <clipPath id="myClip" clipPathUnits="objectBoundingBox">
+                                                                        <path d="M0.894,0.894 C0.842,0.955,0.685,1,0.5,1 C0.315,1,0.158,0.955,0.106,0.894 C0.045,0.842,0,0.685,0,0.5 C0,0.315,0.045,0.158,0.106,0.106 C0.158,0.045,0.315,0,0.5,0 C0.685,0,0.842,0.045,0.894,0.106 C0.955,0.158,1,0.315,1,0.5 C1,0.685,0.955,0.842,0.894,0.894">
+                                                                        </path>
+                                                                    </clipPath>
+                                                                </defs>
+                                                            </svg>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-
-                                            <div class="messenger__messageBlock">
-                                                <p class="messenger__username">Фамилия Имя</p>
-                                                <span class="messageDepartureTime">12 июля 2021 в 12:01</span>
+                                                <div class="d-flex flex-column flex-lg-row align-items-lg-center messenger__messageSendBy">
+                                                    <p class="messenger__username order-2 order-lg-1">Фамилия Имя</p>
+                                                    <span class="messageDepartureTime order-1 order-lg-2">12 июля 2021 в 12:01</span>
+                                                </div>
                                                 <p class="userMessage">
                                                     )))
                                                     <span class="smile">
@@ -993,6 +994,7 @@
                                     </div>
                                 </div>
                                 <span class="messenger__username__hidden">Николай Иван</span>
+
                                 <span class="messageDepartureTime">12 июля 2021 в 12:01</span>
                             </li>
                         </ul>

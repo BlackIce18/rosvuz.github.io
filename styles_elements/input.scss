@@ -353,7 +353,8 @@ svg {
             height: 100%;
             position: absolute;
 
-            background: linear-gradient(0deg, $white, transparent 50%);
+            background: linear-gradient( rgba(255,255,255,0.0), $white);
+            background: -webkit-linear-gradient( rgba(255,255,255,0.0), $white);
         }
     }
 

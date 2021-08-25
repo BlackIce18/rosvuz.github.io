@@ -363,8 +363,9 @@ svg.icon_plus {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(50%, transparent));
-  background: linear-gradient(0deg, #ffffff, transparent 50%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#ffffff));
+  background: linear-gradient(rgba(255, 255, 255, 0), #ffffff);
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0), #ffffff);
 }
 
 .resume__main_text {
@@ -591,8 +592,14 @@ svg.icon_plus {
   width: 20px;
   height: 30px;
   fill: #c5c5c5;
-  margin: 10px 15px 10px 0;
+  margin: 15px 15px 15px 0;
   cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .inputMessageBlock__send-paperClip {
+    margin: 10px 15px 10px 0;
+  }
 }
 
 .inputMessageBlock__send-paperClip-active, .inputMessageBlock__send-paperClip:hover {

@@ -2,6 +2,7 @@
 
 .dialog__message {
     width: auto;
+    max-width: calc(100% - 100px - 20px - 50px); //margin-left,right, user-photo
     height: auto;
     padding: 20px;
     border-radius: 10px;
@@ -10,6 +11,10 @@
     line-height: 25px;
     font-weight: 300;
     display: inline-block;
+
+    @media (max-width: $lg) {
+        max-width: calc(100% - 15px - 20px - 30px);
+    }
 
     p {
         margin: 0;
