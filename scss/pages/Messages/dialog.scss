@@ -499,7 +499,7 @@
         margin: 5px 90px 0 70px;
     }
 
-    .messenger__dialog_message_wrapper.own_message + .messageDepartureTime {
+    .messenger__dialog_message_wrapper.own_message ~ .messageDepartureTime {
         margin: 5px 70px 0 90px;
     }
 }
