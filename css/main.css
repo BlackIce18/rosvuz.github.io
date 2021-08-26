@@ -3388,6 +3388,7 @@ svg.icon_plus {
   display: none;
 }
 .messenger__list-item {
+  height: 75px;
   border: 1px solid #eef1f8;
   border-radius: 10px;
   padding: 12px 95px 12px 25px;
@@ -3426,6 +3427,8 @@ svg.icon_plus {
   text-overflow: ellipsis;
 }
 .messenger__list-item .messenger__messageBlock .messenger__messageSendBy {
+  margin-top: 3px;
+  margin-bottom: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -3451,12 +3454,13 @@ svg.icon_plus {
   text-overflow: ellipsis;
   margin: 0;
   font-size: 15px;
-  line-height: 25px;
+  line-height: 15px;
 }
 .messenger__list-item .messenger__messageBlock .userMessage a {
   text-decoration: none;
   color: #444444;
   display: block;
+  line-height: 15px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -3524,6 +3528,7 @@ svg.icon_plus {
     padding: 10px 30px 10px 13px;
   }
   .messenger__list-item .messenger__messageBlock {
+    margin: 0;
     flex-direction: column;
   }
   .messenger__list-item .messenger__messageBlock .messageDepartureTime {
@@ -3532,16 +3537,23 @@ svg.icon_plus {
     margin-top: 3px;
     margin-bottom: 5px;
   }
+  .messenger__list-item .messenger__messageBlock .messenger__messageSendBy {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
   .messenger__list-item .messenger__messageBlock .messenger__username {
     font-size: 12px;
     line-height: 12px;
-    margin-bottom: 5px;
-    max-width: 100%;
+    /*margin-bottom: 5px;*/
   }
   .messenger__list-item .messenger__messageBlock .userMessage {
     font-size: 12px;
     line-height: 12px;
     font-weight: 300;
+  }
+  .messenger__list-item .messenger__messageBlock .userMessage a .smile svg {
+    width: 14px;
+    height: 14px;
   }
   .messenger__list-item .user__short-photo {
     width: 34px;
@@ -3627,6 +3639,7 @@ svg.icon_plus {
   padding: 15px 0;
 }
 .messenger .messenger__dialog_pinned_message .messenger__list-item {
+  height: 100%;
   border: none;
   padding: 0;
   margin: 0;
@@ -3663,6 +3676,9 @@ svg.icon_plus {
 .messenger .messenger__dialog_pinned_message.pin_overflow .messenger__list-item .user {
   height: 25px;
   overflow: hidden;
+}
+.messenger .messenger__dialog_pinned_message.pin_overflow .messenger__messageBlock {
+  display: none;
 }
 .messenger .messenger__dialog_pinned_message.pin_overflow .messenger__messageBlock .messenger__username, .messenger .messenger__dialog_pinned_message.pin_overflow .messenger__messageBlock .messageDepartureTime, .messenger .messenger__dialog_pinned_message.pin_overflow .messenger__messageBlock .userMessage {
   display: none;
@@ -3736,6 +3752,9 @@ svg.icon_plus {
   padding: 0;
   margin: 0;
 }
+.messenger__dialog_messages ul li .dialog__message .messenger__list-item.reply-message {
+  height: auto;
+}
 .messenger__dialog_messages ul li .dialog__message .messenger__list-item .messenger__messageBlock {
   overflow: auto;
 }
@@ -3746,6 +3765,7 @@ svg.icon_plus {
 .messenger__dialog_messages ul li .dialog__message .messenger__list-item .messenger__messageBlock .userMessage {
   white-space: normal;
   text-overflow: inherit;
+  line-height: 25px;
 }
 .messenger__dialog_messages ul li .dialog__message .messenger__list-item .messageDepartureTime {
   display: inline-block;
@@ -3819,6 +3839,10 @@ svg.icon_plus {
     margin-top: 10px;
     width: 100%;
     line-height: 18px;
+  }
+  .messenger__dialog_messages ul li .dialog__message .messenger__list-item .messenger__messageBlock .userMessage .smile svg {
+    width: 14px;
+    height: 14px;
   }
   .messenger__dialog_messages ul li .dialog__message .messenger__list-item .messageDepartureTime {
     margin-bottom: 5px;
@@ -3943,7 +3967,7 @@ svg.icon_plus {
     margin: 5px 90px 0 70px;
   }
 
-  .messenger__dialog_message_wrapper.own_message + .messageDepartureTime {
+  .messenger__dialog_message_wrapper.own_message ~ .messageDepartureTime {
     margin: 5px 70px 0 90px;
   }
 }

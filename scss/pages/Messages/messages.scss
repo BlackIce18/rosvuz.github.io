@@ -51,6 +51,7 @@
         }
 
         &-item {
+            height: 75px;
             border: 1px solid $menugray;
             border-radius: 10px;
             padding: 12px 95px 12px 25px;
@@ -94,8 +95,12 @@
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
+                //margin: 7px 0; // убрал для ialog
 
                 .messenger__messageSendBy {
+                    margin-top: 3px; // Добавил для messages
+                    margin-bottom: 10px; // было 6, для messages 10
+
                     @include threeDotsInText;
                 }
 
@@ -126,12 +131,13 @@
                     text-overflow: ellipsis;
                     margin: 0;
                     font-size: 15px;
-                    line-height: 25px;
+                    line-height: 15px;
 
                     a {
                         text-decoration: none;
                         color: $darkgray;
                         display: block;
+                        line-height: 15px;
 
                         @include threeDotsInText;
                     }
@@ -224,6 +230,7 @@
             padding: 10px 30px 10px 13px;
 
             .messenger__messageBlock {
+                margin:0;
                 flex-direction: column;
 
                 .messageDepartureTime {
@@ -233,17 +240,30 @@
                     margin-bottom: 5px;
                 }
 
+                .messenger__messageSendBy {
+                    margin-top: 3px; // Добавил для messages
+                    margin-bottom: 3px;
+                }
+
                 .messenger__username {
                     font-size: 12px;
                     line-height: 12px;
-                    margin-bottom: 5px;
-                    max-width: 100%;
+                    /*margin-bottom: 5px;*/
                 }
 
                 .userMessage {
                     font-size: 12px;
                     line-height: 12px;
                     font-weight: 300;
+
+                    a {
+                        .smile {
+                            svg {
+                                width: 14px;
+                                height: 14px;
+                            }
+                        }
+                    }
                 }
             }
 
